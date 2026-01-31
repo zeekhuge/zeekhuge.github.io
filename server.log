@@ -1,0 +1,62 @@
+
+> astro-erudite@1.6.3 dev
+> astro dev
+
+22:46:40 [types] Generated 1ms
+22:46:41 [content] Syncing content
+22:47:12 [content] Synced content
+22:47:12 [vite] Port 1234 is in use, trying another one...
+
+ astro  v5.17.1 ready in 34460 ms
+
+┃ Local    http://localhost:1235/
+┃ Network  http://192.168.1.7:1235/
+           http://172.17.0.1:1235/
+           http://172.18.0.1:1235/
+
+22:47:12 watching for file changes...
+22:48:19 [glob-loader] Reloaded data from ptp_inline_assembly_and_the_extra_files.md
+22:48:19 [glob-loader] Reloaded data from ptp_docs_commands_and_tools.md
+22:48:19 [glob-loader] Reloaded data from some_shots.md
+22:48:19 [glob-loader] Reloaded data from ptp_blinky.md
+22:48:19 [glob-loader] Reloaded data from working_with_prus_beagleboneblack_rpmsg.md
+22:48:19 [glob-loader] Reloaded data from working_with_prus_beagleboneblack_introduction_to_prus.md
+22:48:19 [glob-loader] Reloaded data from a_handfull_of_commands_and_scripts_to_get_started_with_beagleboneblack.md
+22:48:19 [glob-loader] Reloaded data from working_with_prus_beagleboneblack_remoteproc.md
+22:48:19 [glob-loader] Reloaded data from zeekhuge.md
+22:48:19 [glob-loader] Reloaded data from enscribe.md
+22:48:20 [glob-loader] Reloaded data from ptp_inline_assembly_and_the_extra_files.md
+22:48:20 [glob-loader] Reloaded data from some_shots.md
+22:48:20 [glob-loader] Reloaded data from ptp_docs_commands_and_tools.md
+22:48:20 [glob-loader] Reloaded data from ptp_blinky.md
+22:48:20 [glob-loader] Reloaded data from working_with_prus_beagleboneblack_rpmsg.md
+22:48:20 [glob-loader] Reloaded data from working_with_prus_beagleboneblack_introduction_to_prus.md
+22:48:20 [glob-loader] Reloaded data from a_handfull_of_commands_and_scripts_to_get_started_with_beagleboneblack.md
+22:48:20 [glob-loader] Reloaded data from working_with_prus_beagleboneblack_remoteproc.md
+22:48:20 [glob-loader] Reloaded data from zeekhuge.md
+22:48:20 [glob-loader] Reloaded data from enscribe.md
+22:49:15 [glob-loader] Reloaded data from zeekhuge.md
+22:49:15 [glob-loader] Reloaded data from enscribe.md
+22:49:16 [glob-loader] Reloaded data from zeekhuge.md
+22:49:16 [glob-loader] Reloaded data from enscribe.md
+22:49:16 [glob-loader] Reloaded data from enscribe.md
+22:49:16 [glob-loader] Reloaded data from zeekhuge.md
+22:49:16 [content] Syncing content
+22:49:16 [content] Content config changed
+22:49:16 [content] Clearing content store
+22:49:19 [content] Synced content
+22:49:37 [content] Syncing content
+22:49:37 [content] Content config changed
+22:49:37 [content] Clearing content store
+22:49:40 [content] Synced content
+rom zeekhuge.md
+22:49:16 [glob-loader] Reloaded data from enscribe.md
+22:49:16 [content] Syncing content
+22:49:16 [content] Content config changed
+22:49:16 [content] Clearing content store
+22:49:16 [WARN] [glob-loader] The base directory "/media/zeekhuge/hdd_linux/projects/zeekhuge.github.io/src/content/post/" does not exist.
+22:49:17 [content] Synced content
+22:49:37 [content] Syncing content
+22:49:37 [content] Content config changed
+22:49:37 [content] Clearing content store
+22:49:41 [content] Synced content
