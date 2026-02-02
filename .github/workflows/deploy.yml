@@ -2,12 +2,12 @@ name: Deploy to GitHub Pages
 on:
   # Trigger the workflow every time you push to the `astro-migration` branch
   push:
-    branches: [ astro-migration ]
+    branches: [astro-migration]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 # Allow this job to clone the repo and create a page deployment
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 jobs:
@@ -16,16 +16,32 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      
+        with:
+          fetch-depth: 0
+
       - name: Install, build, and upload your site
         uses: withastro/action@v2
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+
+      - name: Deploy to master branch
+        run: |
+          # Setup Git user
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          # Create a new orphan branch for the build output
+          git checkout --orphan gh-pages
+
+          # Remove all files from staging
+          git rm -rf .
+
+          # Copy the built site to the root
+          cp -r dist/* .
+
+          # Add all files
+          git add .
+
+          # Create a commit with the built files
+          git commit -m "Deploy: Built from astro-migration branch"
+
+          # Push the commit to the master branch
+          git push -f origin gh-pages:master
